@@ -1,0 +1,60 @@
+@charset "UTF-8";
+body  {
+	font: 100% "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	background: #666666;
+	margin: 0; /* 複数の異なるブラウザの初期設定値に対応するため、body エレメントのマージンと余白を 0 にすることをお勧めします */
+	padding: 0;
+	text-align: center; /* これにより、IE 5* ブラウザではコンテナが中央揃えになります。そして、テキストは、#container セレクタの初期設定である左揃えに設定されます */
+	color: #000000;
+}
+.twoColLiqRt #container {
+	width: 80%;  /* これにより、幅がブラウザの幅の 80% のコンテナが設定されます */
+	background: #FFFFFF;
+	margin: 0 auto; /* 自動マージン（幅と連動）により、ページが中央揃えになります */
+	border: 1px solid #000000;
+	text-align: left; /* この設定は body エレメントの text-align: center より優先されます。 */
+}
+ 
+/* #sidebar に関するヒント：
+1. 単位はパーセントであるため、サイドバーで余白を使用することは回避してください。標準に準拠したブラウザでは、余白は幅に追加されるため、実際の幅が不特定の幅になります。 
+2. 「.twoColLiqRt #sidebar p」ルールで見られるように、div の端と div に含まれるエレメントの間のスペースは、エレメントに左マージンと右マージンを適用することによって設定できます。
+3. 親エレメントが表示された後に Internet Explorer によって幅が計算されるため、単位がパーセントの列では原因不明のバグが発生することがあります。最終的な表示をより正確に予測する必要がある場合は、単位がピクセルの列に変更することができます。
+*/
+.twoColLiqRt #sidebar {
+	float: right; /* このエレメントはフローティングエレメントであるため、幅が設定されている必要があります */
+	width: 24%; 
+	background: #EBEBEB; /* 背景色は、列内のコンテンツの長さにわたって表示されます */
+	padding: 15px 0; /* 上余白と下余白により、この div 内に視覚的なスペースが設定されます */
+}
+.twoColLiqRt #sidebar h3, .twoColLiqRt #sidebar p {
+	margin-left: 10px; /* サイドバーに配置されるすべてのエレメントに左マージンと右マージンが設定されている必要があります */
+	margin-right: 10px;
+}
+
+.twoColLiqRt #sidebar img {
+    border-radius: 5px;
+}
+
+/* #mainContent に関するヒント：
+1. #mainContent と #sidebar の間のスペースは、#mainContent div の右マージンによって設定されます。#sidebar div に含まれるコンテンツの量に関係なく、#sidebar div のスペースは維持されます。#sidebar のコンテンツが終了した後のスペースに #mainContent div のテキストを挿入するには、この右マージンを削除します。
+2. サポートされている最小解像度（800 x 600）でのフローティングエレメントの落下を回避するには、#mainContent div 内のエレメントを 430px 以下にする必要があります（イメージを含む）。
+3. 下の Internet Explorer の条件分岐コメントでは、#mainContent に「hasLayout」を設定するのにズームプロパティが使用されます。これにより、いくつかの IE 固有のバグが回避されます。
+*/
+.twoColLiqRt #mainContent { 
+	margin: 0 26% 0 20px; /* 左マージンは、パーセントまたはピクセルで設定できます。これにより、ページの左側にスペースが設定されます。 */
+}
+
+.fltrt { /* このクラスは、ページ上でフローティングエレメントを右側に配置するのに使用できます。プローティングエレメントは、ページ上でその横に配置されるエレメントの前に配置される必要があります。 */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* このクラスは、ページ上でフローティングエレメントを左側に配置するのに使用できます */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* このクラスは、div またはブレークエレメントに適用される必要があり、また、フローティングエレメントが完全に含まれているコンテナの末尾の直前にある最後のエレメントである必要があります */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
