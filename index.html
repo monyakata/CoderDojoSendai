@@ -1,12 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>CoderDojo Sendai</title>
+<title>仙台市にある子供のためのプログラミング道場 | CoderDojo Sendai</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+<script>
+  $(function(){
+    $('#description').masonry({
+      itemSelector: '.item',
+    });
+  });
+</script>
 <style type="text/css">
 <!--
 -->
@@ -14,10 +24,8 @@
 <link href="css/base.css" rel="stylesheet" type="text/css" />
 <!--[if IE]>
 <style type="text/css"> 
-/* この条件分岐コメントにすべてのバージョンの IE を対象とした css のフィックスを配置します */
 .twoColLiqRt #sidebar1 { padding-top: 30px; }
 .twoColLiqRt #mainContent { zoom: 1; padding-top: 15px; }
-/* 上述の専用のズームプロパティにより、いくつかのバグを回避するのに必要な hasLayout が IE に対して設定されます */
 </style>
 <![endif]-->
 </head>
@@ -25,9 +33,9 @@
 <div id="container">
   <div id="sidebar"> <!-- InstanceBeginEditable name="rightmenu" -->
     <h3>スタッフとメンター</h3>
-    <p>子どもたちをサポートしてくれるボランティアの人たちです。</p>
+    <p>子どもたちをサポートするボランティアスタッフはこんな人たちです。</p>
     <ul>
-      <li><a href="https://www.facebook.com/Jonersan" target="_blank"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/49717_100001728088850_1297814730_q.jpg" alt=" 砂金よしひろ" width="50" height="50" /></a></li>
+      <li><a href="https://www.facebook.com/Jonersan" target="_blank"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/49717_100001728088850_1297814730_q.jpg" alt=" 砂金よしひろ" width="50" height="50" /></a> </li>
       <li><a href="https://www.facebook.com/munakata.akiko" target="_blank"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/203391_100002105917091_767894787_q.jpg" alt="宗形晶子" width="50" height="50" /></a> </li>
       <li><a href="https://www.facebook.com/profile.php?id=1249448247" target="_blank"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash4/372380_1249448247_1965983330_q.jpg" alt="山口健史" width="50" height="50" /></a> </li>
       <li><a href="https://www.facebook.com/Yasuharu.Ozaki" target="_blank"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc1/573285_100001869153828_1980256763_q.jpg" alt="Yasuharu Ozaki" width="50" height="50" /></a> </li>
@@ -39,45 +47,58 @@
     <h1> CoderDojo Sendai</h1>
     <div id="intro"> <!-- InstanceBeginEditable name="summary" -->
       <p>CoderDojo Sendaiのウェブページです。<br/>
-        最新の情報はFacebookの方に掲載しています。 </p>
+        最新の情報はFacebookに掲載しています。 <a href="https://www.facebook.com/CoderdojoSendai" target="_blank"><img src="image/FB_FindUsOnFacebook-100.png" width="100" height="26" alt="CoderDojo Facebook" /></a></p>
       <!-- InstanceEndEditable -->
       <div id="next"> <!-- InstanceBeginEditable name="topic" -->
-        <p>今度のCoderDojo Sendaiは……<br />
-          6/15（土）13:30〜 <a href="#application">申し込み受付中！</a></p>
+        <h3>次回のCoderDojo Sendaiは……</h3>
+        <strong>6/15（土）</strong>13:30〜<br />
+        詳細は<a href="https://www.facebook.com/events/487846447952003/" target="_blank">こちら</a>
+        </p>
         <!-- InstanceEndEditable --> </div>
     </div>
     <div id="description"> <!-- InstanceBeginEditable name="contents" -->
-      <h2>CoderDojoって？ </h2>
-      <p>CoderDojoとはゲーム、アプリケーション、Webサイトを作ってみたい子ども達にプログラム
-        の記述の仕方（コーディング）を教える国際的な活動です。
-        <a href="http://coderdojo.com/" target="_blank">全世界にDojo（道場）がたくさんあります！</a><br />
+      <div class="item">
+        <h2>CoderDojoって？ </h2>
+        <p>CoderDojoとはゲーム、アプリケション、Webサイトを作ってみたい子ども達にプログラム
+          の記述の仕方（コーディング）を教える国際的な活動です。 <a href="http://coderdojo.com/" target="_blank">全世界にDojo（道場）がたくさんあります！</a><br />
         </p>
-      <p>日本国内でも、東京をはじめ全国にDojoがあります。CoderDojo Sendaiはその１つです。</p>
-      <h2>CoderDojo Sendaiはいつ、どこで開催しているの？</h2>
-<p>基本的に毎月第２または第３土曜日に開催されます。</p>
-<p>開催場所は「クラウドガーデン」というコワーキングスペースです。</p>
-<ul>
-  <li><a href="http://www.cloud-garden.net/" target="_blank">仙台の中心地駅前にあるコワーキングスペース Cloud Garden</a>　<a href="http://www.cloud-garden.net/access/" target="_blank">（場所・行き方）</a></li>
-</ul>
-<h2>CoderDojo Sendaiに参加したい！</h2>
-      <p class="welcome">大歓迎です！</p>
-      <p>プログラミングをやってみたいという気持ちさえあれば、参加できます。</p>
-      <p>開催予定が決まりましたら、Facebookの<a href="https://www.facebook.com/CoderdojoSendai" target="_blank">CoderDojo Sendai</a>でお知らせする他、こちらのサイトでも告知いたします。</p>
-      <p>イベントの案内をよく読んで、申し込みフォームからお申込みください。また、メールでの申し込みも受け付けています。</p>
-<h2>CoderDojo Sendaiをお手伝いしたい、見学したい！</h2>
-      <p class="welcome">大歓迎です！</p>
-      <p>子どもたちをサポートしてくれるメンターも募集しています。プログラミングの経験があり、日常パソコンを使っている方なら大丈夫、特別な知識は不要です。また、見学してみたい方も歓迎いたします。 </p>
-      <p><a href="#inquiry">問い合わせ先</a>までお申込みください。
-      <h2 id="application">お問い合わせ</h2>
-      <p id="inquiry">お問い合わせは、coderdojo.sendai{ ＠ }gmail.comまでどうぞ！（{}を外して＠を半角に）</p>
-      <h2>CoderDojoについてもっと知るには……</h2>
-      <p>Facebookの<a href="https://www.facebook.com/groups/coderdojo.jp/" target="_blank">CoderDojo Japan</a>では、日本国内のCoderDojoの話題、関連する子供向けプログラミングの話題などが豊富です。ぜひ覗いてみてください。</p>
+        <p>日本国内でも、東京をはじめ全国にDojoがあります。CoderDojo Sendaiはその１つです。</p>
+      </div>
+      <div class="item">
+        <h2>CoderDojo Sendaiはいつ、どこで開催しているの？</h2>
+        <p>基本的に毎月第２または第３土曜日に開催されます。</p>
+        <p>開催場所は<strong>「クラウドガーデン」</strong>というコワーキングスペースです。</p>
+        <ul>
+          <li><a href="http://www.cloud-garden.net/" target="_blank">仙台の中心地駅前にあるコワーキングスペース Cloud Garden</a>　<a href="http://www.cloud-garden.net/access/" target="_blank">（場所・行き方）</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <h2>CoderDojo Sendaiに参加したい！</h2>
+        <p class="welcome">大歓迎です！</p>
+        <p>プログラミングをやってみたいという気持ちさえあれば、パソコンが初めてでも参加できます。 </p>
+        <p>開催予定が決まりましたら、Facebookの<a href="https://www.facebook.com/CoderdojoSendai" target="_blank">CoderDojo Sendai</a>でお知らせする他、こちらのサイトでも告知いたします。</p>
+        <p>イベントの案内をよく読んで、申し込みフォームからお申込みください。また、メールでの申し込みも受け付けています。</p>
+      </div>
+      <div class="item">
+        <h2>CoderDojo Sendaiをお手伝いしたい、見学したい！</h2>
+        <p class="welcome">大歓迎です！</p>
+        <p>子どもたちをサポートしてくれるメンターも募集しています。プログラミングの経験があり、日常パソコンを使っている方なら大丈夫、特別な知識は不要です。また、見学してみたい方も歓迎いたします。 </p>
+        <p>問い合わせ先までお申込みください。</p>
+      </div>
+      <div class="item">
+        <h2>お問い合わせ</h2>
+        <p>お問い合わせは、coderdojo.sendai{ ＠ }gmail.comまでどうぞ！（{}を外して＠を半角に）</p>
+      </div>
+      <div class="item">
+        <h2>CoderDojoについてもっと知るには……</h2>
+        <p>Facebookの<a href="https://www.facebook.com/groups/coderdojo.jp/" target="_blank">CoderDojo Japan</a>では、日本国内のCoderDojoの話題、関連する子供向けプログラミングの話題などが豊富です。ぜひ覗いてみてください。</p>
+      </div>
       <!-- InstanceEndEditable --> </div>
     <!-- end #mainContent -->
   </div>
-  <!-- このクリアリングエレメントは、#container div に強制的にすべての子フローティングエレメントが含まれるようにするため、#mainContent div の直後に配置される必要があります -->
   <br class="clearfloat" />
   <!-- end #container -->
 </div>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

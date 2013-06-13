@@ -7,6 +7,16 @@
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.masonry.min.js"></script>
+<script>
+  $(function(){
+    $('#description').masonry({
+      itemSelector: '.item',
+    });
+  });
+</script>
+
 <style type="text/css">
 <!--
 -->
@@ -14,23 +24,18 @@
 <link href="../css/base.css" rel="stylesheet" type="text/css" />
 <!--[if IE]>
 <style type="text/css"> 
-/* この条件分岐コメントにすべてのバージョンの IE を対象とした css のフィックスを配置します */
 .twoColLiqRt #sidebar1 { padding-top: 30px; }
 .twoColLiqRt #mainContent { zoom: 1; padding-top: 15px; }
-/* 上述の専用のズームプロパティにより、いくつかのバグを回避するのに必要な hasLayout が IE に対して設定されます */
 </style>
 <![endif]-->
 </head>
 <body class="twoColLiqRt">
 <div id="container">
-  <div id="sidebar"> <!-- TemplateBeginEditable name="rightmenu" -->
-    <h3>スタッフとメンター</h3>
-    <p>子どもたちのサポートをするのはこんな人たちです。</p>
-    <ul>
-      <li>砂金よしひろ</li>
-      <li>宗形晶子</li>
-      <li>山口健史 </li>
-    </ul>
+  <div id="sidebar">
+  
+   <!-- TemplateBeginEditable name="rightmenu" -->
+    <h3>◯◯◯</h3>
+    <p>◯◯◯</p>
     <!-- TemplateEndEditable -->
     <!-- end #sidebar1 -->
   </div>
@@ -40,19 +45,19 @@
       <p>CoderDojo Sendaiのウェブページです。<br/>
         最新の情報はFacebookの方に掲載しています。 </p>
       <!-- TemplateEndEditable -->
-      <div id="next"> <!-- TemplateBeginEditable name="topic" -->
-        <p>今度のCoderDojo Sendaiは……<br />
-          6/15（土）13:30〜 <a href="#application">申し込み受付中！</a></p>
+      <div id="next">
+       <!-- TemplateBeginEditable name="topic" -->
+        <p>今度のCoderDojo Sendaiは……</p>
         <!-- TemplateEndEditable --> </div>
     </div>
     <div id="description"> <!-- TemplateBeginEditable name="contents" -->
-      <h2>CoderDojoって何？ </h2>
-      <p>CoderDojoとはゲーム、アプリ、Webサイトを作ってみたい子ども達にプログラムの記述の仕方（コーディング）を教える国際的な活動です。 <a href="http://coderdojo.com/" target="_blank">全世界にDojo（道場）がたくさんあります！</a><br />
-        その1つが仙台のCoderDojo Sendaiなのです。</p>
+   <div class="item">
+     <h2>CoderDojoって何？ </h2>
+      <p>CoderDojoとは………◯◯◯</div>
+   <div class="item">◯◯◯</div>      
       <!-- TemplateEndEditable --> </div>
     <!-- end #mainContent -->
   </div>
-  <!-- このクリアリングエレメントは、#container div に強制的にすべての子フローティングエレメントが含まれるようにするため、#mainContent div の直後に配置される必要があります -->
   <br class="clearfloat" />
   <!-- end #container -->
 </div>

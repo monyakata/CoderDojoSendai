@@ -1,0 +1,4 @@
+CoderDojoSendai
+===============
+CoderDojo Sendaiのウェブ。  
+がんばってつくります。
