@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>仙台市にある子供のためのプログラミング道場 | CoderDojo Sendai</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.masonry.min.js"></script>
+<script>
+  $(function(){
+    $('#description').masonry({
+      itemSelector: '.item',
+    });
+  });
+</script>
+
+<style type="text/css">
+<!--
+-->
+</style>
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<style type="text/css"> 
+.twoColLiqRt #sidebar1 { padding-top: 30px; }
+.twoColLiqRt #mainContent { zoom: 1; padding-top: 15px; }
+</style>
+<![endif]-->
+</head>
+<body class="twoColLiqRt">
+<div id="container">
+  <div id="sidebar">
+  
+   <!-- TemplateBeginEditable name="rightmenu" -->
+    <h3>◯◯◯</h3>
+    <p>◯◯◯</p>
+    <!-- TemplateEndEditable -->
+    <!-- end #sidebar1 -->
+  </div>
+  <div id="mainContent">
+    <h1> CoderDojo Sendai</h1>
+    <div id="intro"> <!-- TemplateBeginEditable name="summary" -->
+      <p>CoderDojo Sendaiのウェブページです。<br/>
+        最新の情報はFacebookの方に掲載しています。 </p>
+      <!-- TemplateEndEditable -->
+      <div id="next">
+       <!-- TemplateBeginEditable name="topic" -->
+        <p>今度のCoderDojo Sendaiは……</p>
+        <!-- TemplateEndEditable --> </div>
+    </div>
+    <div id="description"> <!-- TemplateBeginEditable name="contents" -->
+   <div class="item">
+     <h2>CoderDojoって何？ </h2>
+      <p>CoderDojoとは………◯◯◯</div>
+   <div class="item">◯◯◯</div>      
+      <!-- TemplateEndEditable --> </div>
+    <!-- end #mainContent -->
+  </div>
+  <br class="clearfloat" />
+  <!-- end #container -->
+</div>
+</body>
+</html>
