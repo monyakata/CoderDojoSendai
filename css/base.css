@@ -14,12 +14,14 @@ a {
 h1 {
 	font-size: 300%;
 	color:#396;
-	text-shadow: 3px 3px 1px #999;
+	text-shadow: 1px 1px 1px #999;
 }
 h2 {
-	font-size: 150%;
+	font-size: 140%;
 	color:#36C;
-	text-shadow: 2px 2px 1px #aaa;
+	text-shadow: 1px 1px 1px #aaa;
+	border-bottom: 2px #36C dotted;
+	margin: 20px 10px;
 }
 #next h3 {
 	font-size: 120%
@@ -87,5 +89,5 @@ p {
 	margin: 10px 5px;
 	padding: 10px;
 	position: relative;
-	width: 340px;
+	width: 320px;
 }
